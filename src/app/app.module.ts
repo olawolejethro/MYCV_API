@@ -4,8 +4,8 @@ import { AppService } from './app.service';
 import { AppController } from './app.controller';
 import { UsersModule } from 'src/users/users.module';
 import { ReportsModule } from 'src/reports/reports.module';
-import { User } from 'src/users/user.entity';
 import { Report } from 'src/reports/report.entity';
+import { User } from 'src/users/user.entity';
 
 @Module({
   imports: [
