@@ -7,17 +7,17 @@ import { Injectable } from '@nestjs/common';
 export class UsersService {
   constructor(@InjectRepository(User) private repo: Repository<User>) {}
 
-  async create(email: string, Password: string) {
+  create(email: string, Password: string) {
     const user = this.repo.create({ email, Password });
     return this.repo.save(user);
   }
 
-  async findOne(id: number) {
-    return this.findOne(id);
+  findOne(id: number) {
+    return this.repo.findOneBy({ id });
   }
 
-  async find(email: string) {
-    return this.find(email);
+  find(email: string) {
+    return this.repo.find({ where: { email } });
   }
 
   async update(id: number, attr: Partial<User>) {
