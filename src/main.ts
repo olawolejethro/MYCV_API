@@ -1,5 +1,5 @@
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app/app.module';
+import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
 // import cookieSession from 'cookie-session';
 const CookieSession = require('cookie-session');
