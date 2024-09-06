@@ -3,4 +3,21 @@ import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 export class Report {
   @PrimaryGeneratedColumn()
   id: number;
+  @Column()
+  price: number;
+
+  @Column()
+  model: string;
+
+  @Column()
+  year: number;
+
+  @Column()
+  lng: string;
+
+  @Column()
+  lat: number;
+
+  @Column()
+  mileage: number;
 }
