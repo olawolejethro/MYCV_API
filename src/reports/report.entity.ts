@@ -13,7 +13,7 @@ export class Report {
   year: number;
 
   @Column()
-  lng: string;
+  lng: number;
 
   @Column()
   lat: number;

@@ -7,7 +7,7 @@ import {
   IsLongitude,
 } from 'class-validator';
 
-export class createReportDto {
+export class CreateReportDto {
   @IsString()
   make: string;
 
@@ -23,6 +23,11 @@ export class createReportDto {
   @Min(0)
   @Max(1000000)
   mileage: number;
+
+  @IsNumber()
+  @Min(0)
+  @Max(1000000)
+  price: number;
 
   @IsLongitude()
   lng: number;
